@@ -16,6 +16,8 @@
 		2345277D2AE84FA7007F657E /* dndRaces.json in Resources */ = {isa = PBXBuildFile; fileRef = 2345277B2AE84FA7007F657E /* dndRaces.json */; };
 		234527832AE8500C007F657E /* HeroRace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234527812AE8500C007F657E /* HeroRace.swift */; };
 		234527842AE8500C007F657E /* HeroClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234527822AE8500C007F657E /* HeroClass.swift */; };
+		2345278E2AE8608B007F657E /* StringConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2345278D2AE8608B007F657E /* StringConstants.swift */; };
+		234527902AE860C0007F657E /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2345278F2AE860C0007F657E /* Localizable.strings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,8 @@
 		2345277B2AE84FA7007F657E /* dndRaces.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = dndRaces.json; sourceTree = "<group>"; };
 		234527812AE8500C007F657E /* HeroRace.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeroRace.swift; sourceTree = "<group>"; };
 		234527822AE8500C007F657E /* HeroClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeroClass.swift; sourceTree = "<group>"; };
+		2345278D2AE8608B007F657E /* StringConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringConstants.swift; sourceTree = "<group>"; };
+		2345278F2AE860C0007F657E /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +70,7 @@
 				234527752AE84F19007F657E /* Services */,
 				2345276A2AE84A95007F657E /* Assets.xcassets */,
 				2345276C2AE84A95007F657E /* Preview Content */,
+				234527852AE8510D007F657E /* Constants */,
 			);
 			path = "weekly-hero";
 			sourceTree = "<group>";
@@ -122,6 +127,23 @@
 			path = UserModel;
 			sourceTree = "<group>";
 		};
+		234527852AE8510D007F657E /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				234527862AE85147007F657E /* String Constants */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		234527862AE85147007F657E /* String Constants */ = {
+			isa = PBXGroup;
+			children = (
+				2345278D2AE8608B007F657E /* StringConstants.swift */,
+				2345278F2AE860C0007F657E /* Localizable.strings */,
+			);
+			path = "String Constants";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -164,6 +186,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ru,
 			);
 			mainGroup = 2345275A2AE84A93007F657E;
 			productRefGroup = 234527642AE84A93007F657E /* Products */;
@@ -180,6 +203,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				234527902AE860C0007F657E /* Localizable.strings in Resources */,
 				2345277C2AE84FA7007F657E /* dndClasses.json in Resources */,
 				2345277D2AE84FA7007F657E /* dndRaces.json in Resources */,
 				2345276E2AE84A95007F657E /* Preview Assets.xcassets in Resources */,
@@ -196,6 +220,7 @@
 			files = (
 				234527782AE84F76007F657E /* NetworkManager.swift in Sources */,
 				234527842AE8500C007F657E /* HeroClass.swift in Sources */,
+				2345278E2AE8608B007F657E /* StringConstants.swift in Sources */,
 				234527692AE84A93007F657E /* ContentView.swift in Sources */,
 				234527832AE8500C007F657E /* HeroRace.swift in Sources */,
 				234527672AE84A93007F657E /* weekly_heroApp.swift in Sources */,
