@@ -9,8 +9,8 @@ import Foundation
 
 enum StringConstants: String {
     
-    // MARK: - ContentView
-    case titel
+    // MARK: - HeroesListView
+    case heroesListViewTitle
     
     var localized: String {
         NSLocalizedString("\(rawValue)", comment: "")

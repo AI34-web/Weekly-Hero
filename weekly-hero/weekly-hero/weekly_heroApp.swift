@@ -11,7 +11,7 @@ import SwiftUI
 struct weekly_heroApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            HeroesListView()
         }
     }
 }

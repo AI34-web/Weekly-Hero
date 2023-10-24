@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  HeroesListView.swift
 //  weekly-hero
 //
 //  Created by Artyom Ivanov on 24.10.2023.
@@ -7,12 +7,12 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct HeroesListView: View {
     var body: some View {
         VStack {
             HStack {
-                Text(StringConstants.titel.localized)
-                    .font(.system(size: 60))
+                Text(StringConstants.heroesListViewTitle.localized)
+                    .styleHeading()
                 
                 Spacer()
             }
@@ -24,5 +24,5 @@ struct ContentView: View {
 }
 
 #Preview {
-    ContentView()
+    HeroesListView()
 }

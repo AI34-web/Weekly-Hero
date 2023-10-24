@@ -6,5 +6,5 @@
   
 */
 
-// Mark: - ContentView
-"titel" = "Заголовок2";
+// Mark: - HeroesListView
+"heroesListViewTitle" = "Ваши Герои";
