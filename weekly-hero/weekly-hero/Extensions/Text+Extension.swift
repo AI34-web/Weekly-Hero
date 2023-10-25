@@ -8,8 +8,8 @@
 import SwiftUI
 
 extension Text {
-    func styleHeading() -> some View {
+    func styleHeadingAbosanova() -> some View {
         self
-            .font(.custom(.headingSuperSquad, size: 32))
+            .font(.custom(.abosanovaHeading, size: 32))
     }
 }

@@ -12,7 +12,14 @@ struct HeroesListView: View {
         VStack {
             HStack {
                 Text(StringConstants.heroesListViewTitle.localized)
-                    .styleHeading()
+                    .font(.custom(.abosanovaHeading, size: 32))
+                
+                Spacer()
+            }
+            
+            HStack {
+                Text(StringConstants.heroesListViewTitle.localized)
+                    .font(.custom("abosanova", size: 32))
                 
                 Spacer()
             }

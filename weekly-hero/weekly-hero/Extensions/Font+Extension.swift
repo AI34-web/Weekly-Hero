@@ -8,12 +8,11 @@
 import SwiftUI
 
 extension Font {
-    static func custom(_ font: CustomFonts, size: CGFloat) -> SwiftUI.Font {
+    static func custom(_ font: CustomFonts, size: CGFloat) -> Font {
         SwiftUI.Font.custom(font.rawValue, size: size)
     }
 }
-enum CustomFonts: String {
-    
-    /// Заголовочный шрифт
-    case headingSuperSquad = "Super_Squad_Rus"
+
+public enum CustomFonts: String, CaseIterable {
+    case abosanovaHeading = "abosanova"
 }

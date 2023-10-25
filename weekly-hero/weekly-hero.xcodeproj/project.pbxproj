@@ -20,6 +20,7 @@
 		234527902AE860C0007F657E /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2345278F2AE860C0007F657E /* Localizable.strings */; };
 		234527932AE866D5007F657E /* Text+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234527922AE866D5007F657E /* Text+Extension.swift */; };
 		234527982AE86A26007F657E /* Font+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234527972AE86A26007F657E /* Font+Extension.swift */; };
+		2345279D2AE915C5007F657E /* abosanova.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2345279C2AE915C5007F657E /* abosanova.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,8 +37,9 @@
 		2345278D2AE8608B007F657E /* StringConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringConstants.swift; sourceTree = "<group>"; };
 		2345278F2AE860C0007F657E /* Localizable.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
 		234527922AE866D5007F657E /* Text+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Text+Extension.swift"; sourceTree = "<group>"; };
-		234527962AE8699E007F657E /* Super_Squad_Rus.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Super_Squad_Rus.otf; sourceTree = "<group>"; };
 		234527972AE86A26007F657E /* Font+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font+Extension.swift"; sourceTree = "<group>"; };
+		2345279A2AE873BA007F657E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		2345279C2AE915C5007F657E /* abosanova.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = abosanova.ttf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +72,7 @@
 		234527652AE84A93007F657E /* weekly-hero */ = {
 			isa = PBXGroup;
 			children = (
+				2345279A2AE873BA007F657E /* Info.plist */,
 				234527662AE84A93007F657E /* weekly_heroApp.swift */,
 				234527942AE86945007F657E /* Resources */,
 				234527742AE84EF7007F657E /* Views */,
@@ -171,7 +174,7 @@
 		234527952AE8695D007F657E /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
-				234527962AE8699E007F657E /* Super_Squad_Rus.otf */,
+				2345279C2AE915C5007F657E /* abosanova.ttf */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -236,6 +239,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				234527902AE860C0007F657E /* Localizable.strings in Resources */,
+				2345279D2AE915C5007F657E /* abosanova.ttf in Resources */,
 				2345277C2AE84FA7007F657E /* dndClasses.json in Resources */,
 				2345277D2AE84FA7007F657E /* dndRaces.json in Resources */,
 				2345276E2AE84A95007F657E /* Preview Assets.xcassets in Resources */,
@@ -394,6 +398,7 @@
 				DEVELOPMENT_TEAM = QVRU6Y7V59;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "weekly-hero/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -423,6 +428,7 @@
 				DEVELOPMENT_TEAM = QVRU6Y7V59;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "weekly-hero/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
