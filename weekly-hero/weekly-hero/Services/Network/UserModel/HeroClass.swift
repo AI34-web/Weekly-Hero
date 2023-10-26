@@ -7,12 +7,12 @@
 
 import Foundation
 
-struct HeroClasses: Codable {
+struct HeroClasses: Decodable, Hashable {
     let count: Int
     let classes: [HeroClass]
 }
 
-struct HeroClass: Codable {
+struct HeroClass: Decodable, Hashable {
     let id: String
     let name: String
     let description: String

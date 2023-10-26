@@ -11,6 +11,7 @@ struct HeroesCell: View {
     @State private var isShowButtonAction = false
     
     @Binding var heroTestArray: [String]
+    @Binding var isShowCreatHeroView: Bool
     
     // MARK: - Constants value
     private let cellRadius: CGFloat = 20.0
@@ -45,7 +46,8 @@ extension HeroesCell {
         .padding(.horizontal, cellHorizontalPadding)
         .onTapGesture {
             withAnimation {
-                heroTestArray.append(contentsOf: ["new_Test_Hero"])
+//                heroTestArray.append(contentsOf: ["new_Test_Hero"])
+                isShowCreatHeroView = true
             }
         }
     }
@@ -98,6 +100,6 @@ extension HeroesCell {
 }
 
 #Preview {
-    HeroesCell(heroTestArray: .constant([""]))
+    HeroesCell(heroTestArray: .constant([""]), isShowCreatHeroView: .constant(true))
 }
 

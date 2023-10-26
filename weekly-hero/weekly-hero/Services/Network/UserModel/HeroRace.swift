@@ -7,12 +7,12 @@
 
 import Foundation
 
-struct HeroRaces: Codable {
+struct HeroRaces: Decodable, Hashable {
     let count: Int
     let race: [HeroRace]
 }
 
-struct HeroRace: Codable {
+struct HeroRace: Decodable, Hashable {
     let id: String
     let name: String
     let characteristics: [HeroCharacteristics]
@@ -20,19 +20,19 @@ struct HeroRace: Codable {
     let subRaces: [HeroSubRace]
 }
 
-struct HeroCharacteristics: Codable {
+struct HeroCharacteristics: Decodable, Hashable {
     let id: String
     let name: String
     let value: Int
 }
 
-struct HeroSkills: Codable {
+struct HeroSkills: Decodable, Hashable {
     let id: String
     let name: String
     let description: String
 }
 
-struct HeroSubRace: Codable {
+struct HeroSubRace: Decodable, Hashable {
     let id: String
     let name: String
     let description: String
@@ -40,13 +40,13 @@ struct HeroSubRace: Codable {
     let skills: [HeroSubRaceSkills]
 }
    
-struct HeroSubRaceCharacteristics: Codable {
+struct HeroSubRaceCharacteristics: Decodable, Hashable {
     let id: String
     let name: String
     let value: Int
 }
 
-struct HeroSubRaceSkills :Codable {
+struct HeroSubRaceSkills: Decodable, Hashable {
     let id: String
     let name: String
     let description: String
