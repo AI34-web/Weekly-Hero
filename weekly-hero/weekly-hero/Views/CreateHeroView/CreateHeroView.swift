@@ -23,6 +23,10 @@ struct CreateHeroView: View {
             
             Spacer()
             
+            Text("Шаг 1: - Выберите рассу героя")
+            
+            Spacer()
+            
             SelectRaceView(races: $races)
             
             Spacer()

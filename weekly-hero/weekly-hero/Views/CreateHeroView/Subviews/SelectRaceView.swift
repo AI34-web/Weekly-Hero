@@ -10,15 +10,15 @@ import SwiftUI
 struct SelectRaceView: View {
     @State var scrolled = 0
     @State var stories = [
-        CarouselExtension(id: 0, image: "img1", offset: 0,title: "Unknown_Name"),
-        CarouselExtension(id: 1, image: "img2", offset: 0,title: "Unknown_Name"),
-        CarouselExtension(id: 2, image: "img3", offset: 0,title: "Unknown_Name"),
-        CarouselExtension(id: 3, image: "img4", offset: 0,title: "Unknown_Name"),
-        CarouselExtension(id: 4, image: "img5", offset: 0,title: "Unknown_Name"),
-        CarouselExtension(id: 5, image: "img6", offset: 0,title: "Unknown_Name"),
-        CarouselExtension(id: 6, image: "img7", offset: 0,title: "Unknown_Name"),
-        CarouselExtension(id: 7, image: "img8", offset: 0,title: "Unknown_Name"),
-        CarouselExtension(id: 8, image: "img8", offset: 0,title: "Unknown_Name")
+        CarouselExtension(id: 0, image: "Dragonborn", offset: 0,title: "Dragonborn"),
+        CarouselExtension(id: 1, image: "Dwarf", offset: 0,title: "Dwarf"),
+        CarouselExtension(id: 2, image: "Elf", offset: 0,title: "Elf"),
+        CarouselExtension(id: 3, image: "Gnome", offset: 0,title: "Gnome"),
+        CarouselExtension(id: 4, image: "Half_Elf", offset: 0,title: "Half_Elf"),
+        CarouselExtension(id: 5, image: "Half_Orc", offset: 0,title: "Half_Orc"),
+        CarouselExtension(id: 6, image: "Halfling", offset: 0,title: "Halfling"),
+        CarouselExtension(id: 7, image: "Human", offset: 0,title: "Human"),
+        CarouselExtension(id: 8, image: "Tiefling", offset: 0,title: "Tiefling")
     ]
     
     @Binding var races: [HeroRace]
@@ -98,6 +98,9 @@ struct SelectRaceView: View {
                             }
                         })
                         )
+                        .onTapGesture {
+                            debugPrint("Tapped \(story.id) cell")
+                        }
                     }
                 }
                 .frame(height: UIScreen.main.bounds.height / 1.8)
