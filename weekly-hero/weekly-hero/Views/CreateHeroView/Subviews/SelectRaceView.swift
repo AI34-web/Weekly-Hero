@@ -7,13 +7,6 @@
 
 import SwiftUI
 
-struct CarouselExtension : Identifiable {
-    var id : Int
-    var image : String
-    var offset : CGFloat
-    var title : String
-}
-
 struct SelectRaceView: View {
     @State var scrolled = 0
     @State var stories = [
@@ -34,16 +27,16 @@ struct SelectRaceView: View {
         ScrollView(.vertical, showsIndicators: false) {
             VStack {
                 ZStack{
-                    ForEach(stories.reversed()){story in
-                        HStack{
-                            ZStack(alignment: Alignment(horizontal: .leading, vertical: .bottom)){
+                    ForEach(stories.reversed()) { story in
+                        HStack {
+                            ZStack(alignment: Alignment(horizontal: .leading, vertical: .bottom)) {
                                 Image(story.image)
                                     .resizable()
                                     .aspectRatio(contentMode: .fill)
                                     .frame(width: calculateWidth(), height: (UIScreen.main.bounds.height / 1.8) - CGFloat(story.id - scrolled) * 50)
                                     .cornerRadius(15)
                                 
-                                VStack(alignment: .leading,spacing: 18){
+                                VStack(alignment: .leading,spacing: 18) {
                                     HStack{
                                         Text(story.title)
                                             .font(.title)
@@ -73,7 +66,9 @@ struct SelectRaceView: View {
                         }
                         .contentShape(Rectangle())
                         .offset(x: story.offset)
-                        .gesture(DragGesture().onChanged({ (value) in
+                        .gesture(
+                            DragGesture()
+                                .onChanged({ (value) in
                             
                             withAnimation{
                                 if value.translation.width < 0 && story.id != stories.last!.id {
@@ -82,8 +77,9 @@ struct SelectRaceView: View {
                                     stories[story.id - 1].offset = -(calculateWidth() + 60) + value.translation.width
                                 }
                             }
-                        }).onEnded({ (value) in
-                            withAnimation{
+                        })
+                                .onEnded({ (value) in
+                            withAnimation {
                                 if value.translation.width < 0{
                                     if -value.translation.width > 180 && story.id != stories.last!.id{
                                         stories[story.id].offset = -(calculateWidth() + 60)
@@ -100,7 +96,8 @@ struct SelectRaceView: View {
                                     }
                                 }
                             }
-                        }))
+                        })
+                        )
                     }
                 }
                 .frame(height: UIScreen.main.bounds.height / 1.8)
@@ -108,14 +105,6 @@ struct SelectRaceView: View {
                 .padding(.top,25)
             }
         }
-    }
-}
-
-extension SelectRaceView {
-    func calculateWidth()->CGFloat{
-        let screen = UIScreen.main.bounds.width - 50
-        let width = screen - (2 * 30)
-        return width
     }
 }
 

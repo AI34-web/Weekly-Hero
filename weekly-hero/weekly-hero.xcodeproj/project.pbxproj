@@ -28,6 +28,7 @@
 		234527AB2AEB0CC0007F657E /* CreateHeroBackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234527AA2AEB0CC0007F657E /* CreateHeroBackButton.swift */; };
 		234527AD2AEB0DF6007F657E /* SelectRaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234527AC2AEB0DF6007F657E /* SelectRaceView.swift */; };
 		234527AF2AEB1B7D007F657E /* RaceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234527AE2AEB1B7D007F657E /* RaceCell.swift */; };
+		234527B32AEBC793007F657E /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234527B22AEBC793007F657E /* Constant.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +55,7 @@
 		234527AA2AEB0CC0007F657E /* CreateHeroBackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateHeroBackButton.swift; sourceTree = "<group>"; };
 		234527AC2AEB0DF6007F657E /* SelectRaceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectRaceView.swift; sourceTree = "<group>"; };
 		234527AE2AEB1B7D007F657E /* RaceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceCell.swift; sourceTree = "<group>"; };
+		234527B22AEBC793007F657E /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +156,7 @@
 		234527852AE8510D007F657E /* Constants */ = {
 			isa = PBXGroup;
 			children = (
+				234527B22AEBC793007F657E /* Constant.swift */,
 				234527862AE85147007F657E /* String Constants */,
 			);
 			path = Constants;
@@ -310,6 +313,7 @@
 				234527AD2AEB0DF6007F657E /* SelectRaceView.swift in Sources */,
 				234527932AE866D5007F657E /* Text+Extension.swift in Sources */,
 				234527782AE84F76007F657E /* NetworkManager.swift in Sources */,
+				234527B32AEBC793007F657E /* Constant.swift in Sources */,
 				234527A42AEA7F20007F657E /* CreateHeroView.swift in Sources */,
 				234527A12AE9208E007F657E /* HoroesCell.swift in Sources */,
 				234527842AE8500C007F657E /* HeroClass.swift in Sources */,
