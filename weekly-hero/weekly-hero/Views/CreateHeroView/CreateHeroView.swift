@@ -17,16 +17,13 @@ struct CreateHeroView: View {
     var body: some View {
         VStack {
             CreateHeroNavigationView()
-            
             CreateHeroBackButton(
                 isShowCreatHeroView: $isShowCreatHeroView
             )
             
             Spacer()
             
-            ForEach(races, id: \.name) { element in
-                Text(element.name)
-            }
+            SelectRaceView(races: $races)
             
             Spacer()
         }

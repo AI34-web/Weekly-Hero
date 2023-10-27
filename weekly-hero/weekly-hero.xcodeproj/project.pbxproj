@@ -26,6 +26,8 @@
 		234527A62AEB0B4B007F657E /* HeroListNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234527A52AEB0B4B007F657E /* HeroListNavigationView.swift */; };
 		234527A92AEB0C32007F657E /* CreateHeroNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234527A82AEB0C32007F657E /* CreateHeroNavigationView.swift */; };
 		234527AB2AEB0CC0007F657E /* CreateHeroBackButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234527AA2AEB0CC0007F657E /* CreateHeroBackButton.swift */; };
+		234527AD2AEB0DF6007F657E /* SelectRaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234527AC2AEB0DF6007F657E /* SelectRaceView.swift */; };
+		234527AF2AEB1B7D007F657E /* RaceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234527AE2AEB1B7D007F657E /* RaceCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -50,6 +52,8 @@
 		234527A52AEB0B4B007F657E /* HeroListNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroListNavigationView.swift; sourceTree = "<group>"; };
 		234527A82AEB0C32007F657E /* CreateHeroNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateHeroNavigationView.swift; sourceTree = "<group>"; };
 		234527AA2AEB0CC0007F657E /* CreateHeroBackButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateHeroBackButton.swift; sourceTree = "<group>"; };
+		234527AC2AEB0DF6007F657E /* SelectRaceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectRaceView.swift; sourceTree = "<group>"; };
+		234527AE2AEB1B7D007F657E /* RaceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RaceCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -222,6 +226,8 @@
 			children = (
 				234527A82AEB0C32007F657E /* CreateHeroNavigationView.swift */,
 				234527AA2AEB0CC0007F657E /* CreateHeroBackButton.swift */,
+				234527AC2AEB0DF6007F657E /* SelectRaceView.swift */,
+				234527AE2AEB1B7D007F657E /* RaceCell.swift */,
 			);
 			path = Subviews;
 			sourceTree = "<group>";
@@ -301,6 +307,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				234527AD2AEB0DF6007F657E /* SelectRaceView.swift in Sources */,
 				234527932AE866D5007F657E /* Text+Extension.swift in Sources */,
 				234527782AE84F76007F657E /* NetworkManager.swift in Sources */,
 				234527A42AEA7F20007F657E /* CreateHeroView.swift in Sources */,
@@ -311,6 +318,7 @@
 				234527A92AEB0C32007F657E /* CreateHeroNavigationView.swift in Sources */,
 				234527692AE84A93007F657E /* HeroesListView.swift in Sources */,
 				234527832AE8500C007F657E /* HeroRace.swift in Sources */,
+				234527AF2AEB1B7D007F657E /* RaceCell.swift in Sources */,
 				234527A62AEB0B4B007F657E /* HeroListNavigationView.swift in Sources */,
 				234527982AE86A26007F657E /* Font+Extension.swift in Sources */,
 				234527672AE84A93007F657E /* weekly_heroApp.swift in Sources */,

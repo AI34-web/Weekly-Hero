@@ -15,9 +15,9 @@ struct HeroRaces: Decodable, Hashable {
 struct HeroRace: Decodable, Hashable {
     let id: String
     let name: String
-    let characteristics: [HeroCharacteristics]
-    let skills: [HeroSkills]
-    let subRaces: [HeroSubRace]
+    let characteristics: [HeroCharacteristics]?
+    let skills: [HeroSkills]?
+    let subRaces: [HeroSubRace]?
 }
 
 struct HeroCharacteristics: Decodable, Hashable {

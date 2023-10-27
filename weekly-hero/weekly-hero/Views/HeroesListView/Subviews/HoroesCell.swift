@@ -46,7 +46,6 @@ extension HeroesCell {
         .padding(.horizontal, cellHorizontalPadding)
         .onTapGesture {
             withAnimation {
-//                heroTestArray.append(contentsOf: ["new_Test_Hero"])
                 isShowCreatHeroView = true
             }
         }
@@ -68,7 +67,6 @@ extension HeroesCell {
                                         .resizable()
                                         .frame(width: heightImage, height: heightImage)
                                         .onTapGesture {
-//                                                heroTestArray.remove(at: heroIndex)
                                                 heroTestArray.remove(at: heroIndex)
                                         }
                                 } else {
