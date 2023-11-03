@@ -8,15 +8,20 @@
 import SwiftUI
 
 struct HeroesListView: View {
-    @State private var testArr: [String] = []
     @State private var isShowCreatHeroView = false
+    
+    let viewModel: ViewModel
+
+    init(viewModel: ViewModel) {
+        self.viewModel = viewModel
+    }
     
     var body: some View {
         VStack {
             HeroListNavigationView()
             HeroesCell(
-                heroTestArray: $testArr,
-                isShowCreatHeroView: $isShowCreatHeroView
+                isShowCreatHeroView: $isShowCreatHeroView,
+                viewModel: viewModel
             )
             
             Spacer()
@@ -33,5 +38,8 @@ struct HeroesListView: View {
 }
 
 #Preview {
-    HeroesListView()
+    HeroesListView(
+        viewModel: ViewModel(
+        dataProvider: MockDataProvider()
+    ))
 }

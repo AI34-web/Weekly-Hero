@@ -19,10 +19,13 @@ struct HeroesCell: View {
     private let cellHorizontalPadding: CGFloat = 16
     private let cellImageFrame: CGFloat = 50
     
+    var viewModel: ViewModel
+    
     var body: some View {
         ForEach(Array(heroTestArray.enumerated()), id: \.element) { (offset, element) in
             heroCell(heroIndex: offset)
         }
+        
         addHeroCell()
     }
 }
@@ -67,7 +70,7 @@ extension HeroesCell {
                                         .resizable()
                                         .frame(width: heightImage, height: heightImage)
                                         .onTapGesture {
-                                                heroTestArray.remove(at: heroIndex)
+                                            
                                         }
                                 } else {
                                     Image(systemName: "plus.app")
@@ -97,7 +100,18 @@ extension HeroesCell {
     }
 }
 
-#Preview {
-    HeroesCell(heroTestArray: .constant([""]), isShowCreatHeroView: .constant(true))
-}
+//#Preview {
+//    HeroesCell(
+//        viewModel: <#ViewModel#>, heroTestArray: .constant([""]),
+//        isShowCreatHeroView: .constant(true),
+//        
+//    )
+    
+//    HeroesCell(
+//        heroTestArray: .constant([]),
+//        isShowCreatHeroView: <#T##Bool#>,
+//        viewModel: <#T##ViewModel#>
+//    )
+//    
+//}
 

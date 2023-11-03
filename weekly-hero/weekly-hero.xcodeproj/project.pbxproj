@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		230676132AF3AF0100BEB75C /* testJSONFile.json in Resources */ = {isa = PBXBuildFile; fileRef = 230676122AF3AF0100BEB75C /* testJSONFile.json */; };
+		230676192AF3B45000BEB75C /* Hero.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230676182AF3B45000BEB75C /* Hero.swift */; };
+		2306761B2AF3E91700BEB75C /* HeroModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2306761A2AF3E91700BEB75C /* HeroModel.swift */; };
+		2306761D2AF3EA1600BEB75C /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2306761C2AF3EA1600BEB75C /* ViewModel.swift */; };
+		2306761F2AF3EAB700BEB75C /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2306761E2AF3EAB700BEB75C /* DataProvider.swift */; };
+		230676212AF4259600BEB75C /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230676202AF4259600BEB75C /* Coordinator.swift */; };
+		230676232AF4261700BEB75C /* AppView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 230676222AF4261700BEB75C /* AppView.swift */; };
 		234527672AE84A93007F657E /* weekly_heroApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234527662AE84A93007F657E /* weekly_heroApp.swift */; };
 		234527692AE84A93007F657E /* HeroesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234527682AE84A93007F657E /* HeroesListView.swift */; };
 		2345276B2AE84A95007F657E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2345276A2AE84A95007F657E /* Assets.xcassets */; };
@@ -32,6 +39,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		230676122AF3AF0100BEB75C /* testJSONFile.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = testJSONFile.json; sourceTree = "<group>"; };
+		230676182AF3B45000BEB75C /* Hero.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hero.swift; sourceTree = "<group>"; };
+		2306761A2AF3E91700BEB75C /* HeroModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroModel.swift; sourceTree = "<group>"; };
+		2306761C2AF3EA1600BEB75C /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		2306761E2AF3EAB700BEB75C /* DataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataProvider.swift; sourceTree = "<group>"; };
+		230676202AF4259600BEB75C /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		230676222AF4261700BEB75C /* AppView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppView.swift; sourceTree = "<group>"; };
 		234527632AE84A93007F657E /* weekly-hero.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "weekly-hero.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		234527662AE84A93007F657E /* weekly_heroApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = weekly_heroApp.swift; sourceTree = "<group>"; };
 		234527682AE84A93007F657E /* HeroesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroesListView.swift; sourceTree = "<group>"; };
@@ -69,6 +83,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		230676142AF3B2D300BEB75C /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				230676182AF3B45000BEB75C /* Hero.swift */,
+				2306761A2AF3E91700BEB75C /* HeroModel.swift */,
+				2306761C2AF3EA1600BEB75C /* ViewModel.swift */,
+				2306761E2AF3EAB700BEB75C /* DataProvider.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
 		2345275A2AE84A93007F657E = {
 			isa = PBXGroup;
 			children = (
@@ -88,8 +113,11 @@
 		234527652AE84A93007F657E /* weekly-hero */ = {
 			isa = PBXGroup;
 			children = (
+				230676142AF3B2D300BEB75C /* Data */,
 				2345279A2AE873BA007F657E /* Info.plist */,
 				234527662AE84A93007F657E /* weekly_heroApp.swift */,
+				230676202AF4259600BEB75C /* Coordinator.swift */,
+				230676222AF4261700BEB75C /* AppView.swift */,
 				234527942AE86945007F657E /* Resources */,
 				234527742AE84EF7007F657E /* Views */,
 				234527752AE84F19007F657E /* Services */,
@@ -138,6 +166,7 @@
 		234527792AE84F80007F657E /* JSONResources */ = {
 			isa = PBXGroup;
 			children = (
+				230676122AF3AF0100BEB75C /* testJSONFile.json */,
 				2345277A2AE84FA7007F657E /* dndClasses.json */,
 				2345277B2AE84FA7007F657E /* dndRaces.json */,
 			);
@@ -299,6 +328,7 @@
 				2345277C2AE84FA7007F657E /* dndClasses.json in Resources */,
 				2345277D2AE84FA7007F657E /* dndRaces.json in Resources */,
 				2345276E2AE84A95007F657E /* Preview Assets.xcassets in Resources */,
+				230676132AF3AF0100BEB75C /* testJSONFile.json in Resources */,
 				2345276B2AE84A95007F657E /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -312,7 +342,9 @@
 			files = (
 				234527AD2AEB0DF6007F657E /* SelectRaceView.swift in Sources */,
 				234527932AE866D5007F657E /* Text+Extension.swift in Sources */,
+				2306761F2AF3EAB700BEB75C /* DataProvider.swift in Sources */,
 				234527782AE84F76007F657E /* NetworkManager.swift in Sources */,
+				230676232AF4261700BEB75C /* AppView.swift in Sources */,
 				234527B32AEBC793007F657E /* Constant.swift in Sources */,
 				234527A42AEA7F20007F657E /* CreateHeroView.swift in Sources */,
 				234527A12AE9208E007F657E /* HoroesCell.swift in Sources */,
@@ -321,11 +353,15 @@
 				2345278E2AE8608B007F657E /* StringConstants.swift in Sources */,
 				234527A92AEB0C32007F657E /* CreateHeroNavigationView.swift in Sources */,
 				234527692AE84A93007F657E /* HeroesListView.swift in Sources */,
+				2306761D2AF3EA1600BEB75C /* ViewModel.swift in Sources */,
+				230676192AF3B45000BEB75C /* Hero.swift in Sources */,
 				234527832AE8500C007F657E /* HeroRace.swift in Sources */,
 				234527AF2AEB1B7D007F657E /* RaceCell.swift in Sources */,
 				234527A62AEB0B4B007F657E /* HeroListNavigationView.swift in Sources */,
 				234527982AE86A26007F657E /* Font+Extension.swift in Sources */,
 				234527672AE84A93007F657E /* weekly_heroApp.swift in Sources */,
+				2306761B2AF3E91700BEB75C /* HeroModel.swift in Sources */,
+				230676212AF4259600BEB75C /* Coordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
